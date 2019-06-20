@@ -22,10 +22,8 @@ import NotFound from "./components/notFound";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Route path="/login" component={Login} />
       <Route path="/not-found" component={NotFound} />
       <Route path="/" component={App} />
-      <Redirect to="/not-found" />
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")
