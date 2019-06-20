@@ -7,6 +7,7 @@ import "bootstrap-v4-rtl/dist/css/bootstrap-rtl.min.css";
 import "font-awesome/css/font-awesome.css";
 
 import "./css/index.css";
+import "./css/navbar.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

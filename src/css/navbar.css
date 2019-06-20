@@ -1,0 +1,50 @@
+.navbar {
+    font-family: 'iransans';
+    background: rgb(179, 223, 213) !important;
+    height: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: .8rem;
+    color: rgb(59, 82, 53);
+    cursor: pointer;
+    transition: all 1s;
+    padding: 5px 15px;
+
+}
+
+.navbar a:hover {
+    font-size: .87rem;
+    color: rgba(14, 124, 87, 0.637);
+    border-bottom: 1px solid rgba(165, 233, 210, 0.233);
+}
+
+.navbar-logo {
+    width: 45px !important;
+    height: 55px;
+    padding: 10px 5px 10px 0px;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+
+.navbar-logo:hover {
+    opacity: 1;
+}
+
+.form-bar {
+    width: 40%
+}
+
+.form-bar:focus {
+    border: none !important;
+    outline: none !important;
+    box-shadow: 9px 6px 20px 2px #97dad1;
+    width: 40%;
+    text-align: center;
+
+}

@@ -16,6 +16,13 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s !important;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -24,6 +31,5 @@ body {
         'Helvetica Neue', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 
 }
