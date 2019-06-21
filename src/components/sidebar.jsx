@@ -9,7 +9,7 @@ class Sidebar extends Component {
     console.log(this.props.NavlinkReducer);
     const { navLinks } = this.props;
     return (
-      <nav className="col-md-2 d-none d-md-block bg-light sidebar">
+      <nav className="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">
         <div className="sidebar-sticky">
           <UserInfo
             imgUrl="https://avatars2.githubusercontent.com/u/46299535?s=400&u=cd5d7b8cd3940e1150c87b5c8621fd933caaffe2&v=4"

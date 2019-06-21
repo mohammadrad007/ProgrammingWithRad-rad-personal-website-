@@ -15,6 +15,7 @@ import "./css/index.css";
 import "./css/navbar.css";
 import "./css/sidebar.css";
 import "./css/login.css";
+import "./css/footer.css";
 import "./css/404.css";
 
 import NotFound from "./components/notFound";

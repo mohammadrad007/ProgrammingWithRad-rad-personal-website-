@@ -4,13 +4,14 @@ import { connect } from "react-redux";
 class Courses extends Component {
   render() {
     const { courses } = this.props;
+    console.log(courses);
     return (
       <div className="container-fluid">
         <div className="row">
           {courses.map(course => (
             <div
               className="col-lg-3 col-md-4 col-sm-6 col-xs-6 card m-2"
-              key={course._id}
+              key={course.id}
             >
               <div className="card-img">
                 <img
