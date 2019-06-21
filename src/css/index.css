@@ -33,3 +33,130 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
 }
+
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+   * Content
+*/
+
+[role='main'] {
+    padding-top: 120px;
+    /* Space for fixed navbar */
+    padding-bottom: 70px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+}
+
+.socialmedia {
+    color: white;
+}
+
+.card-title {
+    font-family: 'davat';
+    font-size: 1.5rem;
+    color: rgb(109, 163, 145);
+    text-shadow: 0px 3px 4px #dac6c6;
+}
+
+.card-body {
+    font-family: 'iransans', Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    font-style: italic;
+    text-align: justify
+}
+
+.card-link {
+    color: rgb(70, 173, 139)
+}
+
+.card-link:hover {
+    color: rgb(27, 116, 86);
+    font-size: .9rem
+}
+
+.bg-linux {
+    background: #b0c0dd;
+}
+
+.bg-node {
+    background: #87c000;
+}
+
+.bg-react {
+    background: #5ed4f4;
+}
+
+.bg-native {
+    background: #0085a2;
+}
+
+.bg-py {
+    background: #d8b43f;
+}
+
+.bg-php {
+    background: #7a82a1;
+}
+
+.bg-js {
+    background: #e9d54d;
+}
+
+.card-contact {
+    padding: 5px;
+}
+
+.card-contact-header {
+    background: rgba(98, 241, 193, 0.877) !important;
+    border-radius: 5px;
+    box-shadow: 4px 5px 20px 0px #69daa1, -4px -3px 7px 0px #74e4a6
+}
+
+.card-contact-header p {
+    font-family: 'iransans';
+    color: rgb(67, 134, 51)
+}
+
+.card-contact-span {
+    font-size: 1.5rem;
+    font-family: 'iransans';
+    font-weight: 700;
+}
+
+.text-info-concat {
+    color: #0db490;
+}
+
+.input-group-text {
+    background-color: rgba(190, 235, 220, 0.877)
+}
+
+.input-group input:focus {
+    box-shadow: inset 6px 11px 20px 4px rgb(205, 249, 223);
+    border: 1px solid rgb(46, 150, 119)
+}
+
+.input-group textarea:focus {
+    box-shadow: inset 6px 11px 20px 4px rgb(205, 249, 223);
+    border: 1px solid rgb(89, 201, 167)
+}
+
+.btn-info-contact {
+    color: #0db490;
+    background-color: #74f2c8;
+    border-radius: 5px !important
+}
+
+.btn-info-contact:hover {
+    color: #d3f0ea;
+    background-color: #53d6aa
+}

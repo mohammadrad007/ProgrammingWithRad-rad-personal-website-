@@ -2,6 +2,8 @@
     font-family: 'iransans';
     background: rgb(179, 223, 213) !important;
     height: auto;
+    /* margin-bottom: 15px; */
+
 }
 
 .navbar a {
@@ -11,7 +13,6 @@
     cursor: pointer;
     transition: all 1s;
     padding: 5px 15px;
-
 }
 
 .navbar a:hover {

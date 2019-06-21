@@ -9,39 +9,23 @@ const Skill = () => {
           لینوکس
           <div className="progress m-2">
             <div
-              className="progress-bar bg-warning"
+              className="progress-bar bg-linux"
               role="progressbar"
-              style={{ width: "80%" }}
+              style={{ width: "75%" }}
             />
           </div>
           نود جی اس
           <div className="progress m-2">
             <div
-              className="progress-bar bg-danger"
+              className="progress-bar bg-node"
               role="progressbar"
-              style={{ width: "90%" }}
+              style={{ width: "35%" }}
             />
           </div>
           ری اکت
           <div className="progress m-2">
             <div
-              className="progress-bar bg-primary"
-              role="progressbar"
-              style={{ width: "80%" }}
-            />
-          </div>
-          ویو جی اس
-          <div className="progress m-2">
-            <div
-              className="progress-bar bg-success"
-              role="progressbar"
-              style={{ width: "50%" }}
-            />
-          </div>
-          سی شارپ
-          <div className="progress m-2">
-            <div
-              className="progress-bar bg-dark"
+              className="progress-bar bg-react"
               role="progressbar"
               style={{ width: "85%" }}
             />
@@ -49,7 +33,31 @@ const Skill = () => {
           ری اکت نیتیو
           <div className="progress m-2">
             <div
-              className="progress-bar bg-secondary"
+              className="progress-bar bg-native"
+              role="progressbar"
+              style={{ width: "60%" }}
+            />
+          </div>
+          پایتون
+          <div className="progress m-2">
+            <div
+              className="progress-bar bg-py"
+              role="progressbar"
+              style={{ width: "90%" }}
+            />
+          </div>
+          پی اچ پی
+          <div className="progress m-2">
+            <div
+              className="progress-bar bg-php"
+              role="progressbar"
+              style={{ width: "65%" }}
+            />
+          </div>
+          جاوا اسکریپت
+          <div className="progress m-2">
+            <div
+              className="progress-bar bg-js"
               role="progressbar"
               style={{ width: "95%" }}
             />
