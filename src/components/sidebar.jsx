@@ -7,7 +7,7 @@ import UserInfo from "./userInfo";
 class Sidebar extends Component {
   render() {
     console.log(this.props.NavlinkReducer);
-    const { navLinks } = this.props;
+    const { navLinks, coueses } = this.props;
     return (
       <nav className="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">
         <div className="sidebar-sticky">
@@ -24,7 +24,9 @@ class Sidebar extends Component {
                   <span className={nav.icon} />
                   <span className="m-2">{nav.text}</span>
                   {nav.text === "دوره ها" ? (
-                    <span className="badge-danger badge-pill">{nav.count}</span>
+                    <span className="badge-danger badge-pill">
+                      {coueses.length}
+                    </span>
                   ) : null}
                 </Link>
               </li>
@@ -38,7 +40,8 @@ class Sidebar extends Component {
 
 const mapStateToProps = state => {
   return {
-    navLinks: state.NavlinkReducer
+    navLinks: state.NavlinkReducer,
+    coueses: state.CoursesReducer
   };
 };
 

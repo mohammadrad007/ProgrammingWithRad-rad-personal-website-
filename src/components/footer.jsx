@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="rtl float-left  navbar navbar-dark bg-dark col-md-9 ml-sm-auto col-lg-10 mb-2 px-4 footer shadow">
+    <footer className="rtl float-left  navbar navbar-dark bg-dark col-md-9 ml-sm-auto col-lg-10  px-4 footer shadow">
       <div className="container mt-5">
         <div className="col-12 copyright">
           <span className="fa fa-copyright m-1" />
@@ -19,14 +19,22 @@ const Footer = () => {
             <ul>
               <li>
                 <span>
-                  <a>
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://twitter.com/reasercher_o_i"
+                    target="_blank"
+                  >
                     <i className="fa fa-twitter" />
                   </a>
                 </span>
               </li>
               <li>
                 <span>
-                  <a>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="gmail/saberzx313@gmail.com"
+                  >
                     <i className="fa fa-envelope" />
                   </a>
                 </span>
@@ -40,14 +48,22 @@ const Footer = () => {
               </li>
               <li>
                 <span>
-                  <a>
+                  <a
+                    href="https://www.instagram.com/mohammadrad007/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="fa fa-instagram" />
                   </a>
                 </span>
               </li>
               <li>
                 <span>
-                  <a>
+                  <a
+                    href="https://github.com/mohammadrad007"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
                     <i className="fa fa-github" />
                   </a>
                 </span>

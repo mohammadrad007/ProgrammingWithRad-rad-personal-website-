@@ -1,18 +1,68 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import Pagination from "./pagination";
+import { paginate } from "../utils/paginate";
+import Like from "./like";
 class Posts extends Component {
+  state = {
+    posts: [],
+    currentPage: 1,
+    pageSize: 5
+  };
+
+  componentDidMount() {
+    console.log(this.props.post);
+    const posts = this.props.posts;
+    this.setState({ posts });
+  }
+
+  handlePageChange = page => {
+    this.setState({ currentPage: page });
+  };
+
+  getPageData = () => {
+    const { pageSize, currentPage, posts: allPosts } = this.state;
+    const posts = paginate(allPosts, currentPage, pageSize);
+
+    return {
+      totalCount: allPosts.length,
+      data: posts
+    };
+  };
   render() {
-    const { data } = this.props;
+    const { pageSize, currentPage } = this.state;
+    const { length: count } = this.state.posts;
+
+    if (count === 0)
+      return (
+        <div className="container">
+          <div className="col-12 nothing">
+            <div className="col">
+              <p>سلام رفیق چطوری؟ (:</p>
+              <h4>فعلا پستی برا نمایش نیست</h4>
+            </div>
+            <div className="col">
+              <p>
+                چرا نمیری تو صفحات دیگه؟؟ <br /> از منوی کناری انتخاب کن صفحه ت
+                رو <br /> اگرم با موبایل اومدی تو قسمت پایین سایت برات مهم های
+                سایت رو گذاشتم
+              </p>
+              <i className="fa fa-angle-down" />
+            </div>
+          </div>
+        </div>
+      );
+
+    const { totalCount, data } = this.getPageData();
     return (
       <React.Fragment>
         {data.map(post => (
-          <div className="container-fluid" key={post.id}>
+          <div className="container" key={post.id}>
             <div className="card shadow-lg bg-light m-2">
-              <article className="p-3">
+              <article className="p-3 ">
                 <div className="card-header">
                   <h3 className="card-title">
-                    <a href="#">{post.postTitle}</a>
+                    <a>{post.postTitle}</a>
                   </h3>
                   <span className="card-subtitle">
                     <span className="fa fa-calendar m-2" />
@@ -33,7 +83,7 @@ class Posts extends Component {
                       <a href="#">{post.postTags}</a>
                     </li>
                   </ul>
-                  {/* <Like post={post} /> */}
+                  <Like post={post} />
                 </div>
               </article>
             </div>
@@ -45,6 +95,12 @@ class Posts extends Component {
         //   currentPage={currentPage}
         //   onPageChange={this.handlePageChange}
         // /> */}
+        <Pagination
+          itemCount={totalCount}
+          pageSize={pageSize}
+          currentPage={currentPage}
+          onPageChange={this.handlePageChange}
+        />
       </React.Fragment>
     );
   }
@@ -52,7 +108,7 @@ class Posts extends Component {
 
 const mapStateToProps = state => {
   return {
-    data: state.PostsReducer
+    posts: state.PostsReducer
   };
 };
 export default connect(mapStateToProps)(Posts);

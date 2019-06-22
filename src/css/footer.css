@@ -3,11 +3,11 @@
     min-width: 300px;
     min-height: 300px;
     height: auto;
-    border-radius: 1% 50% 0 0;
+    border-radius: 1% 43% 0 0%;
     margin-top: 25px;
     left: 0;
     right: 0;
-    border-top: 25px solid #53e8e8;
+    border-top: 20px solid #53e8e8;
     border-right: 2px solid #53e8e84d;
 }
 

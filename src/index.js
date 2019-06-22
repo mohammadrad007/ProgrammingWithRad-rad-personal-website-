@@ -19,12 +19,19 @@ import "./css/footer.css";
 import "./css/404.css";
 
 import NotFound from "./components/notFound";
+import Dashboard from "./components/admin/dashboard";
+import Login from "./components/login";
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <Route path="/not-found" component={NotFound} />
-      <Route path="/" component={App} />
+      <Switch>
+        <Route path="/login" component={Login} />
+        <Route path="/admin" component={Dashboard} />
+        <Route path="/not-found" component={NotFound} />
+        <Route path="/" component={App} />
+        <Redirect to="/not-found" />
+      </Switch>
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")

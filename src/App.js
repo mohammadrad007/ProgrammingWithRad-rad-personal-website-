@@ -9,7 +9,7 @@ import Education from "./components/edu";
 import Contact from "./components/contact";
 import About from "./components/about";
 import Footer from "./components/footer";
-import Login from "./components/login";
+
 import Courses from "./components/courses";
 
 const App = () => {
@@ -27,7 +27,6 @@ const App = () => {
             <Route path="/education" component={Education} />
             <Route path="/skill" component={Skill} />
             <Route path="/" exact component={Posts} />
-            <Route path="/login" component={Login} />
 
             <Redirect to="/not-found" />
           </Switch>

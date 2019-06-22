@@ -21,6 +21,7 @@ const About = () => {
                 className="card-body card-link"
                 href="https://github.com/mohammadrad007"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 گیت هاب
               </a>

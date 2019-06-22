@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { toast } from "react-toastify";
 
 class Login extends Component {
   state = {
@@ -6,8 +7,16 @@ class Login extends Component {
     password: ""
   };
 
-  handleSubmit = () => {
-    console.log("Submited");
+  handleSubmit = e => {
+    e.preventDefault();
+    if (
+      this.state.email === "saberzx313@gmail.com" &&
+      this.state.password === "12345678"
+    ) {
+      this.props.history.push("/admin");
+    } else {
+      return toast.error("پسورد یا ایمیل نا معتبر است");
+    }
   };
 
   handleChange = e => {
@@ -15,13 +24,13 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className="container">
-        <div className="login-bg">
+      <div className="container-fluid">
+        <div className="col-12 login-bg">
           <form
             onSubmit={this.handleSubmit}
             className="rtl form-signin border rounded m-2 mx-auto bg-light shadow"
           >
-            <h1 className="h6  mb-3 font-weight-bold">لطفا وارد شوید</h1>
+            <h1 className="h6  mb-3 font-weight-bold">ورود ادمین</h1>
             <label htmlFor="inputEmail" className="sr-only">
               آدرس ایمیل
             </label>

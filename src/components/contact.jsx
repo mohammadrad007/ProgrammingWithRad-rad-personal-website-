@@ -21,7 +21,7 @@ const Contact = () => {
   return (
     <div className="container-fluid">
       <div className="row bg-light border rounded m-2">
-        <div className="col-lg-auto mt-5 ">
+        <div className="col-lg-6 col-xl-6 col-md-12 mt-5 ">
           <form>
             <div className="card card-contact rounded m-2">
               <div className="card-header  p-0">
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        <div className="col-lg-auto">
+        <div className="col-lg-6 col-xl-6 col-md-12">
           <p className="lead m-2" style={{ fontFamily: "vazir" }}>
             <span className="fa fa-envelope m-1" />
             اطلاعات تماس

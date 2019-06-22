@@ -10,7 +10,7 @@ class Courses extends Component {
         <div className="row">
           {courses.map(course => (
             <div
-              className="col-lg-3 col-md-4 col-sm-6 col-xs-6 card m-2"
+              className="col-lg-3 col-md-5 col-sm-6 col-xs-6 card m-2"
               key={course.id}
             >
               <div className="card-img">
@@ -29,7 +29,7 @@ class Courses extends Component {
                 <span className="fa fa-clock-o m-1" />
                 {course.time}
 
-                <span className="badge badge-pill m-1 badge-primary float-left">
+                <span className="badge badge-pill m-0 p-2 badge-primary float-left">
                   {course.price}
                 </span>
               </div>

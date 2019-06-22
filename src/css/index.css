@@ -23,17 +23,31 @@
     transition: all .5s !important;
 }
 
+::selection {
+    background: #3f563a;
+    color: #0085a2
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'yekan', 'Segoe UI',
+    font-family: -apple-system, 'iransans', BlinkMacSystemFont, 'yekan', 'Segoe UI',
         'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
         'Helvetica Neue', sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    font-size: .8rem;
+    background: url('./../images/Bg.jpg') center center repeat;
+    background-attachment: fixed;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
 
 .feather {
     width: 16px;
@@ -160,4 +174,79 @@ body {
 .btn-info-contact:hover {
     color: #d3f0ea;
     background-color: #53d6aa
+}
+
+.nothing {
+    background-color: #47af95a6;
+    border-radius: 5px;
+    animation: Nothing 6s infinite;
+
+}
+
+.nothing p {
+    font-family: 'iransans';
+    font-size: 1rem;
+    padding: 5px;
+    margin-right: 1rem;
+    color: #3f563a;
+}
+
+.nothing h4 {
+    font-family: 'iransans';
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-right: 2rem;
+
+}
+
+.nothing i {
+
+    margin-right: 50%;
+    font-size: 1.8rem;
+    animation: Icon-Nothing 2s infinite;
+
+}
+
+@keyframes Nothing {
+    0% {
+        opacity: .2;
+    }
+
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes Icon-Nothing {
+    0% {
+        transform: translateY(10px)
+    }
+
+    5% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(10px)
+    }
+}
+
+.card-header a {
+    font-family: 'iransans';
+    font-size: 1.2rem;
+    color: #3f563a;
+    text-decoration: none
+}
+
+.pagination b {
+    cursor: pointer;
+    color: #3f563a
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #4fd6d6;
+    border-color: #32ddb2;
 }
