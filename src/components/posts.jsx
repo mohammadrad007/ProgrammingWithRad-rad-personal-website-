@@ -18,6 +18,11 @@ class Posts extends Component {
 
   handlePageChange = page => {
     this.setState({ currentPage: page });
+    window.scroll({
+      top: 150,
+      left: 100,
+      behavior: "smooth"
+    });
   };
 
   getPageData = () => {
@@ -80,7 +85,7 @@ class Posts extends Component {
                       برچسپ ها :
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">{post.postTags}</a>
+                      <a href="">{post.postTags}</a>
                     </li>
                   </ul>
                   <Like post={post} />

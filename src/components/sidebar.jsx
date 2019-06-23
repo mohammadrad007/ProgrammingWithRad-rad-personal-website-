@@ -20,7 +20,17 @@ class Sidebar extends Component {
           <ul className="nav flex-column">
             {navLinks.map(nav => (
               <li className="nav-item" key={nav.id}>
-                <Link to={nav.link} className="nav-link">
+                <Link
+                  to={nav.link}
+                  className="nav-link"
+                  onClick={() =>
+                    window.scroll({
+                      top: 0,
+                      left: 100,
+                      behavior: "smooth"
+                    })
+                  }
+                >
                   <span className={nav.icon} />
                   <span className="m-2">{nav.text}</span>
                   {nav.text === "دوره ها" ? (
