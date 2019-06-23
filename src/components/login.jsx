@@ -1,21 +1,24 @@
 import React, { Component } from "react";
-import { toast } from "react-toastify";
+
+import { connect } from "react-redux";
+import { loginAdmin } from "./../actions/actions";
 
 class Login extends Component {
   state = {
     email: "",
     password: ""
   };
-
   handleSubmit = e => {
     e.preventDefault();
     if (
       this.state.email === "saberzx313@gmail.com" &&
       this.state.password === "12345678"
     ) {
-      this.props.history.push("/admin");
+      this.props.loginAdmin(true);
+
+      this.props.history.replace("/admin");
     } else {
-      return toast.error("پسورد یا ایمیل نا معتبر است");
+      this.props.loginAdmin(false);
     }
   };
 
@@ -23,6 +26,7 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
   render() {
+    console.log(this.props.loggedIn);
     return (
       <div className="container-fluid">
         <div className="col-12 login-bg">
@@ -68,4 +72,12 @@ class Login extends Component {
     );
   }
 }
-export default Login;
+const mapStateToProps = state => {
+  return {
+    loggedIn: state.loginReducer
+  };
+};
+export default connect(
+  mapStateToProps,
+  { loginAdmin }
+)(Login);

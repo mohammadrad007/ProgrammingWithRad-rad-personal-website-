@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
+import { logeoutAdmin } from "./../../actions/actions";
 
-const Navbar = ({ courses, posts }) => {
+const Navbar = ({ courses, posts, logeoutAdmin }) => {
   return (
     <nav className="rtl navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
       <p
@@ -25,7 +26,7 @@ const Navbar = ({ courses, posts }) => {
       </p>
       <ul className="navbar-nav px-3">
         <li className="nav-item text-nowrap">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/" onClick={() => logeoutAdmin(false)}>
             خروج
           </Link>
         </li>
@@ -41,4 +42,7 @@ const mapPropsToState = state => {
   };
 };
 
-export default connect(mapPropsToState)(Navbar);
+export default connect(
+  mapPropsToState,
+  { logeoutAdmin }
+)(Navbar);

@@ -22,3 +22,15 @@ export const deleteCourse = courseId => dispatch => {
     payload: courseId
   });
 };
+export const loginAdmin = loggeIn => dispatch => {
+  return dispatch({
+    type: "LOGIN_ADMIN",
+    payload: loggeIn
+  });
+};
+export const logeoutAdmin = loggeout => dispatch => {
+  return dispatch({
+    type: "LOGGEOUT_ADMIN",
+    payload: loggeout
+  });
+};

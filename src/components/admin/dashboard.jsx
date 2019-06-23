@@ -6,8 +6,16 @@ import CreatePost from "./createPost";
 import AllPosts from "./allPosts";
 import CreateCourse from "./createCourse";
 import AllCourses from "./allCourses";
+import { connect } from "react-redux";
 
 class Dashboard extends Component {
+  componentDidMount() {
+    console.log(this.props.logedIn);
+    if (!this.props.logedIn) {
+      this.props.history.push("/");
+    }
+  }
+
   render() {
     return (
       <div className="container-fluid mt-5 rtl">
@@ -27,5 +35,10 @@ class Dashboard extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    logedIn: state.loginReducer
+  };
+};
 
-export default Dashboard;
+export default connect(mapStateToProps)(Dashboard);
