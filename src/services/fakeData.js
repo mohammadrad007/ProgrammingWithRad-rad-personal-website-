@@ -192,35 +192,35 @@ const Data = {
       title: "دوره NodeJs",
       imageUrl:
         "https://toplearn.com/img/course/img-course-%D8%B4%D9%86%D8%A8%D9%87-%DB%B2-%D8%AA%DB%8C%D8%B1-%DB%B1%DB%B3%DB%B9%DB%B7-76784990-823.jpg",
-      text: "متن تست",
+      text: "دوره ی آموزش node js",
       time: "10:11:00",
-      price: 50000
+      price: 80000
     },
     {
       id: 2,
       title: "دوره Linux",
       imageUrl:
         "https://toplearn.com/img/course/img-course-%D8%B4%D9%86%D8%A8%D9%87-%DB%B9-%D8%AF%DB%8C-%DB%B1%DB%B3%DB%B9%DB%B6-86429735-684.jpg",
-      text: "متن تست",
-      time: "10:11:00",
-      price: 100000
+      text: "دوره آموزشی Linux",
+      time: "3:09:00",
+      price: 50000
     },
     {
       id: 3,
       title: "دوره ReactJs",
       imageUrl:
         "https://toplearn.com/img/course/img-course-%D9%BE%D9%86%D8%AC-%D8%B4%D9%86%D8%A8%D9%87-%DB%B4-%D9%85%D8%B1%D8%AF%D8%A7%D8%AF-%DB%B1%DB%B3%DB%B9%DB%B7-67580934-1036.jpg",
-      text: "متن تست",
-      time: "10:11:00",
-      price: 80000
+      text: "آموزش ویدویی React js",
+      time: "12:51:00",
+      price: 110000
     },
     {
       id: 4,
       title: "دوره ReactNative",
       imageUrl:
-        "https://toplearn.com/img/course/img-course-%D8%B4%D9%86%D8%A8%D9%87-%DB%B2-%D8%AA%DB%8C%D8%B1-%DB%B1%DB%B3%DB%B9%DB%B7-76784990-823.jpg",
-      text: "متن تست",
-      time: "10:11:00",
+        "https://toplearn.com/img/course/img-course-%D8%B3%D9%87-%D8%B4%D9%86%D8%A8%D9%87-%DB%B1%DB%B3-%D8%A2%D8%B0%D8%B1-%DB%B1%DB%B3%DB%B9%DB%B7-85774965-735.jpg",
+      text: "دوره آموزشی ReactNative",
+      time: "8:00:00",
       price: 80000
     }
   ]

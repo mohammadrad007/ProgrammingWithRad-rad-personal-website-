@@ -24,7 +24,11 @@ class Courses extends Component {
               <div className="card-title">
                 <p className="text-center m-2">{course.title}</p>
               </div>
-
+              <div className="card-body">
+                <p className="text-center " style={{ margin: "-15px 0" }}>
+                  {course.text}
+                </p>
+              </div>
               <div className="card-footer">
                 <span className="fa fa-clock-o m-1" />
                 {course.time}

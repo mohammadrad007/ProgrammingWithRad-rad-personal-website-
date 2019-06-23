@@ -83,31 +83,76 @@ const Footer = () => {
           <h6>مهم های سایت</h6>
           <ul>
             <li>
-              <Link to="/">
+              <Link
+                to="/"
+                onClick={() =>
+                  window.scroll({
+                    top: 0,
+                    left: 100,
+                    behavior: "smooth"
+                  })
+                }
+              >
                 <span className="fa fa-home feather" />
                 <span className="m-2">صفحه اصلی</span>
               </Link>
             </li>
             <li>
-              <Link to="/courses">
+              <Link
+                to="/courses"
+                onClick={() =>
+                  window.scroll({
+                    top: 0,
+                    left: 100,
+                    behavior: "smooth"
+                  })
+                }
+              >
                 <span className="fa fa-graduation-cap feather" />
                 <span className="m-2">دوره ها</span>
               </Link>
             </li>
             <li>
-              <Link to="/skill">
+              <Link
+                to="/skill"
+                onClick={() =>
+                  window.scroll({
+                    top: 0,
+                    left: 100,
+                    behavior: "smooth"
+                  })
+                }
+              >
                 <span className="fa fa-briefcase feather" />
                 <span className="m-2">مهارت های من</span>
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link
+                to="/about"
+                onClick={() =>
+                  window.scroll({
+                    top: 0,
+                    left: 100,
+                    behavior: "smooth"
+                  })
+                }
+              >
                 <span className="fa fa-user feather" />
                 <span className="m-2">درباه من</span>
               </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link
+                to="/contact"
+                onClick={() =>
+                  window.scroll({
+                    top: 0,
+                    left: 100,
+                    behavior: "smooth"
+                  })
+                }
+              >
                 <span className="fa fa-envelope feather" />
                 <span className="m-2">تماس</span>
               </Link>
