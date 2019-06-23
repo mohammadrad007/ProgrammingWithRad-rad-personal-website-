@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 
 class Dashboard extends Component {
   componentDidMount() {
-    console.log(this.props.logedIn);
+    // console.log(this.props.logedIn);
     if (!this.props.logedIn) {
       this.props.history.push("/");
     }

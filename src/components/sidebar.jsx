@@ -6,7 +6,7 @@ import UserInfo from "./userInfo";
 
 class Sidebar extends Component {
   render() {
-    console.log(this.props.NavlinkReducer);
+    // console.log(this.props.NavlinkReducer);
     const { navLinks, coueses } = this.props;
     return (
       <nav className="col-lg-2 col-md-3 d-none d-md-block bg-light sidebar">

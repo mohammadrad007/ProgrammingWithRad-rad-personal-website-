@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 class Courses extends Component {
   render() {
     const { courses } = this.props;
-    console.log(courses);
+    // console.log(courses);
     return (
       <div className="container-fluid">
         <div className="row">

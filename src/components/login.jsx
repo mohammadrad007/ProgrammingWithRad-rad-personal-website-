@@ -26,7 +26,7 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
   };
   render() {
-    console.log(this.props.loggedIn);
+    // console.log(this.props.loggedIn);
     return (
       <div className="container-fluid">
         <div className="col-12 login-bg">

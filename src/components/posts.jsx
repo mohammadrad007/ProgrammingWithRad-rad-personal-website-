@@ -11,7 +11,7 @@ class Posts extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props.post);
+    // console.log(this.props.post);
     const posts = this.props.posts;
     this.setState({ posts });
   }
@@ -67,7 +67,7 @@ class Posts extends Component {
               <article className="p-3 ">
                 <div className="card-header">
                   <h3 className="card-title">
-                    <a>{post.postTitle}</a>
+                    <p>{post.postTitle}</p>
                   </h3>
                   <span className="card-subtitle">
                     <span className="fa fa-calendar m-2" />

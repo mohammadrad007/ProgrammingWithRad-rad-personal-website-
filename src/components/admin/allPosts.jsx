@@ -4,8 +4,6 @@ import { connect } from "react-redux";
 import { deletePost } from "./../../actions/actions";
 import { paginate } from "../../utils/paginate";
 import Pagination from "./../pagination";
-import Like from "./../like";
-
 class AllPosts extends Component {
   state = {
     posts: [],

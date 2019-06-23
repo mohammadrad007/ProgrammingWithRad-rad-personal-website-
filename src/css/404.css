@@ -36,18 +36,18 @@ body {
 }
 
 .notfound .notfound-404 h1 {
-    font-size: 168px;
+    font-size: 12rem;
     margin: 0px;
     color: #ff508e;
     text-transform: uppercase;
 }
 
 .notfound h2 {
-    font-size: 22px;
+    font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: #222;
-    margin: 0;
+    color: rgb(12, 43, 36);
+    margin: 10px;
 }
 
 .notfound a {
@@ -55,16 +55,16 @@ body {
     font-weight: 700;
     border-radius: 15px;
     text-decoration: none;
-    color: #39b1cb;
+    color: #8fdcee;
 }
 
 .notfound a>.arrow {
     position: relative;
-    top: -2px;
-    border: solid #39b1cb;
+    top: 3px;
+    border: solid #3fdaee;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 3px;
+    padding: 4px;
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
